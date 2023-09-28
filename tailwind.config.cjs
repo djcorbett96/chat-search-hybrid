@@ -19,6 +19,9 @@ module.exports = {
       borderRadius: {
         cta: "var(--cta-border-radius, 1rem)",
       },
+      animation: {
+        loader: "loader 0.6s infinite alternate",
+      },
       keyframes: {
         rotate: {
           "100%": { transform: "rotate(360deg)" },
@@ -28,6 +31,12 @@ module.exports = {
           "50%": { transform: "rotate(45deg)", "stroke-dashoffset": 52 },
           "100%": { transform: "rotate(360deg)", "stroke-dashoffset": 204 },
         },
+        loader: {
+          to: {
+            opacity: 0.1,
+            transform: "translate3d(0, -1rem, 0)",
+          },
+        },
       },
     },
   },
@@ -35,6 +44,6 @@ module.exports = {
     require("@tailwindcss/forms")({
       strategy: "class",
     }),
-    require('@tailwindcss/typography'),
+    require("@tailwindcss/typography"),
   ],
 };
