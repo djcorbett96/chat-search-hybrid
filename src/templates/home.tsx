@@ -16,7 +16,6 @@ import {
 } from "@yext/search-headless-react";
 import { SearchBar, onSearchFunc } from "@yext/search-ui-react";
 import SearchResultsSection from "../components/SearchResultsSection";
-import AiResultSection from "../components/AiResultSection";
 import {
   ChatHeadlessProvider,
   HeadlessConfig as ChatHeadlessConfig,
