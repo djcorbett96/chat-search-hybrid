@@ -87,7 +87,7 @@ function Inner() {
   };
 
   return (
-    <div className="mx-auto min-h-screen max-w-5xl items-center gap-10 py-10">
+    <div className="mx-auto h-screen max-w-5xl items-center gap-10 px-6 py-10">
       <SearchBar onSearch={handleSearch} placeholder="Ask a question..." />
       <section className={cn("flex flex-col gap-10", !hasSearched && "hidden")}>
         <AiAnswer />
@@ -113,7 +113,7 @@ function Inner() {
               <ChatInput
                 sendButtonIcon={<BsSend className="text-gray-900" />}
                 customCssClasses={{
-                  container: "relative w-1/2 resize-none",
+                  container: "relative w-full lg:w-1/2 resize-none",
                   sendButton: "right-2 top-5",
                 }}
                 inputAutoFocus={true}
